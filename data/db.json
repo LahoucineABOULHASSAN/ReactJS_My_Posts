@@ -1,12 +1,6 @@
 {
   "notes": [
     {
-      "title": "title 1 Lorem ipsum dolor sit amet",
-      "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quia totam, recusandae reiciendis vel nulla tenetur explicabo similique ut aut modi dolores commodi placeat autem quas! Aut ex quia error?",
-      "category": "reminders",
-      "id": 1
-    },
-    {
       "title": "title 2 sit amet",
       "details": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quia totam, recusandae reiciendis vel nulla tenetur explicabo similique ut aut modi dolores commodi placeat autem quas! Aut ex quia error?",
       "category": "work",

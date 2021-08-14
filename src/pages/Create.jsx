@@ -1,10 +1,8 @@
-import { Container, Typography } from "@material-ui/core";
-import { useStyles } from "../hooks/useStyles";
+import { Typography } from "@material-ui/core";
 import { Form } from "../components";
 const Create = () => {
-  const classes = useStyles();
   return (
-    <Container className={classes.typography}>
+    <div className="create-page">
       <Typography
         variant="h4"
         component="h2"
@@ -15,7 +13,7 @@ const Create = () => {
         Create Your Note
       </Typography>
       <Form />
-    </Container>
+    </div>
   );
 };
 

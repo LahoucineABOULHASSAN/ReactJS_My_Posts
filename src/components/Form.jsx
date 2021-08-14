@@ -9,15 +9,27 @@ import {
 } from "@material-ui/core";
 import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { useStyles } from "../hooks/useStyles";
 const Form = () => {
   const classes = useStyles();
+  const history = useHistory();
 
   const [title, setTitle] = useState("");
   const [titleError, setTitleError] = useState(false);
   const [details, setDetails] = useState("");
   const [detailsError, setDetailsError] = useState(false);
   const [category, setCategory] = useState("reminders");
+
+  const postData = () => {
+    fetch("http://localhost:5000/notes", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ title, details, category }),
+    }).then(() => history.push("/"));
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -27,7 +39,7 @@ const Form = () => {
     (title === "" || !title) && setTitleError(true);
     (details === "" || !details) && setDetailsError(true);
 
-    title && details && console.log(title, details);
+    title && details && postData();
   };
   return (
     <form
