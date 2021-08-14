@@ -2,7 +2,7 @@ import { Typography } from "@material-ui/core";
 import { Form } from "../components";
 const Create = () => {
   return (
-    <div className="create-page">
+    <div className="page">
       <Typography
         variant="h4"
         component="h2"
@@ -10,7 +10,7 @@ const Create = () => {
         align="center"
         gutterBottom={true}
       >
-        Create Your Note
+        Create New Note
       </Typography>
       <Form />
     </div>

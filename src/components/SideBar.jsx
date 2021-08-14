@@ -35,7 +35,7 @@ const SideBar = () => {
       classes={{ paper: classes.drawer }}
     >
       <div>
-        <Typography variant="h5" color="secondary">
+        <Typography variant="h5" color="secondary" className={classes.spacing}>
           Side Bar
         </Typography>
       </div>
@@ -45,7 +45,7 @@ const SideBar = () => {
             button
             key={item.text}
             onClick={() => history.push(item.path)}
-            className={location.pathname === item.path && classes.active}
+            className={location.pathname === item.path ? classes.active : null}
           >
             <ListItemIcon>{item.icon}</ListItemIcon>
             <ListItemText primary={item.text} />
