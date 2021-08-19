@@ -8,9 +8,7 @@ import {
 } from "@material-ui/core";
 import DeleteOutlineIcon from "@material-ui/icons/DeleteOutline";
 import { makeStyles } from "@material-ui/core";
-import { green, yellow } from "@material-ui/core/colors";
-import { pink } from "@material-ui/core/colors";
-import { blue } from "@material-ui/core/colors";
+import { green, yellow, pink, blue } from "@material-ui/core/colors";
 
 const getBG = (category) => {
   if (category === "reminders") return yellow[700];
