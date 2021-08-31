@@ -5,6 +5,8 @@ import Post from "./Post";
 import { makeStyles } from "@material-ui/core";
 import { green, yellow, pink, blue } from "@material-ui/core/colors";
 
+const URL = "https://jsonplaceholder.typicode.com/posts";
+
 const useStyles = makeStyles({
   grid: {
     "& .grid-card": {
@@ -52,7 +54,6 @@ const useStyles = makeStyles({
   },
 });
 
-const URL = "https://jsonplaceholder.typicode.com/posts";
 const Posts = () => {
   const [posts, setPosts] = useState([]);
   const classes = useStyles();

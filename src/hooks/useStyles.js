@@ -28,5 +28,14 @@ export const useStyles = makeStyles((theme) => {
       width: `calc(100% - ${drawerWidth}px)`,
     },
     toolBar: theme.mixins.toolbar,
+    buttons: {
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "center",
+      "& > *": {
+        marginLeft: "1rem",
+      },
+    },
   };
 });

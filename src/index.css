@@ -9,6 +9,9 @@
 .page {
   width: 100%;
 }
+.page h2 {
+  margin: 3rem auto;
+}
 /* Masonry css */
 .my-masonry-grid {
   display: -webkit-box; /* Not needed if autoprefixing */

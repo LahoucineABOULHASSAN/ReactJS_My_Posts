@@ -18,13 +18,15 @@ const Post = ({ post, handleDelete }) => {
           </Avatar>
         }
         action={
-          <IconButton
-            aria-label="settings"
-            className="delete-icon"
-            onClick={() => handleDelete(post.id)}
-          >
-            <DeleteOutlineIcon />
-          </IconButton>
+          handleDelete && (
+            <IconButton
+              aria-label="settings"
+              className="delete-icon"
+              onClick={() => handleDelete(post.id)}
+            >
+              <DeleteOutlineIcon />
+            </IconButton>
+          )
         }
         title={post.title}
       />

@@ -18,6 +18,7 @@ function App() {
       fontWeightBold: 700,
     },
   });
+
   return (
     <ThemeProvider theme={theme}>
       <Router>
