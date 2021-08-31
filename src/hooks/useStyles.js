@@ -8,7 +8,6 @@ export const useStyles = makeStyles((theme) => {
       width: "100%",
       display: "flex",
       padding: "4rem 2rem",
-      background: "#EFEFEF",
     },
     field: {
       margin: "0.5rem 0",
@@ -16,6 +15,7 @@ export const useStyles = makeStyles((theme) => {
     },
     drawer: {
       width: drawerWidth,
+      "& > div": { background: "#EFEFEF" },
     },
     active: {
       background: secondaryLight,

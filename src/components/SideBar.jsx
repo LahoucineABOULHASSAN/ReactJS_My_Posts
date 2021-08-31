@@ -17,12 +17,12 @@ const SideBar = () => {
   const menu = [
     {
       path: "/",
-      text: "My Notes",
+      text: "My Posts",
       icon: <ViewListOutlinedIcon color="secondary" />,
     },
     {
       path: "/create",
-      text: "Create Note",
+      text: "Create New Post",
       icon: <PlaylistAddOutlinedIcon color="secondary" />,
     },
   ];

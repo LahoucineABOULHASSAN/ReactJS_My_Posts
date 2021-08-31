@@ -1,4 +1,4 @@
-import { Notes, Create } from "./pages";
+import { Posts, Create } from "./pages";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { amber, teal } from "@material-ui/core/colors";
@@ -24,7 +24,7 @@ function App() {
         <Layout>
           <Switch>
             <Route exact path="/">
-              <Notes />
+              <Posts />
             </Route>
             <Route path="/create">
               <Create />
