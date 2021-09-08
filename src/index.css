@@ -4,13 +4,37 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+#root > div {
+  position: relative;
+  height: 100vh;
+}
 /* Pages */
 .page {
   width: 100%;
 }
-.page h2 {
+.create-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page h2,
+.create-page h2 {
   margin: 3rem auto;
+}
+.new-post,
+form {
+  width: 100%;
+}
+.notfound {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10000;
+  width: 100vw;
+  height: 100vh;
 }
 /* Masonry css */
 .my-masonry-grid {

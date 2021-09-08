@@ -59,7 +59,7 @@ const Form = () => {
         {newTitle && newBody ? "My new Post" : "Create New Post"}
       </Typography>
       {newTitle && newBody ? (
-        <div>
+        <div className="new-post">
           <Post post={newPost} />
           <br />
           <div className={classes.buttons}>

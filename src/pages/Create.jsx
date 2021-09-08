@@ -1,7 +1,7 @@
 import { Form } from "../components";
 const Create = () => {
   return (
-    <div className="page">
+    <div className="create-page">
       <Form />
     </div>
   );

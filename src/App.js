@@ -2,7 +2,7 @@ import { Posts, Create } from "./pages";
 import { createTheme, ThemeProvider } from "@material-ui/core";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { amber, teal } from "@material-ui/core/colors";
-import { Layout } from "./components";
+import { Layout, NotFound } from "./components";
 
 function App() {
   const theme = createTheme({
@@ -29,6 +29,9 @@ function App() {
             </Route>
             <Route path="/create">
               <Create />
+            </Route>
+            <Route path="">
+              <NotFound />
             </Route>
           </Switch>
         </Layout>
