@@ -4,32 +4,20 @@
   margin: 0;
   box-sizing: border-box;
 }
-#root > div {
-  position: relative;
-  height: 100vh;
+#root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 /* Pages */
-.page {
-  width: 100%;
-}
-.create-page {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.page h2,
-.create-page h2 {
-  margin: 3rem auto;
-}
-.new-post,
 form {
   width: 100%;
 }
 form .input-field {
   margin-bottom: 1.5rem;
 }
+
 .notfound {
   position: absolute;
   top: 0;
@@ -38,22 +26,4 @@ form .input-field {
   z-index: 10000;
   width: 100vw;
   height: 100vh;
-}
-/* Masonry css */
-.my-masonry-grid {
-  display: -webkit-box; /* Not needed if autoprefixing */
-  display: -ms-flexbox; /* Not needed if autoprefixing */
-  display: flex;
-  margin-left: -30px; /* gutter size offset */
-  width: auto;
-}
-.my-masonry-grid_column {
-  padding-left: 30px; /* gutter size */
-  background-clip: padding-box;
-}
-
-/* Style your items */
-.my-masonry-grid_column > div {
-  /* change div to reference your elements you put in <Masonry> */
-  margin-bottom: 30px;
 }

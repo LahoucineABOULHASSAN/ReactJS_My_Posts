@@ -1,6 +1,7 @@
 import { Typography, Grid } from "@material-ui/core";
 import { useEffect, useState } from "react";
 import Post from "./Post";
+import { format } from "date-fns";
 
 import { makeStyles } from "@material-ui/core";
 import { green, yellow, pink, blue } from "@material-ui/core/colors";
@@ -49,9 +50,6 @@ const useStyles = makeStyles({
       border: `1px solid ${blue[500]}`,
     },
   },
-  typograpy: {
-    margin: "3rem auto",
-  },
 });
 
 const Posts = () => {
@@ -72,15 +70,12 @@ const Posts = () => {
 
   useEffect(() => fetchData(), []);
   return (
-    <div className="page">
-      <Typography
-        className={classes.typograpy}
-        variant="h4"
-        component="h2"
-        color="primary"
-        align="center"
-      >
+    <div>
+      <Typography variant="h4" component="h2" color="primary" align="center">
         My Posts
+      </Typography>
+      <Typography variant="h6" component="h5" color="textSecondary">
+        {format(new Date(), "do MMMM Y")}
       </Typography>
       <Grid container spacing={2}>
         {posts.map((post) => (

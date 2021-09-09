@@ -49,17 +49,11 @@ const Form = () => {
   let newPost = { title: newTitle, body: newBody };
   return (
     <>
-      <Typography
-        variant="h4"
-        component="h2"
-        color="primary"
-        align="center"
-        gutterBottom={true}
-      >
+      <Typography variant="h4" component="h2" color="primary" align="center">
         {newTitle && newBody ? "My new Post" : "Create New Post"}
       </Typography>
       {newTitle && newBody ? (
-        <div className="new-post">
+        <div>
           <Post post={newPost} />
           <br />
           <div className={classes.buttons}>
@@ -90,7 +84,6 @@ const Form = () => {
             label="Note Title"
             fullWidth={true}
             error={titleError}
-            gutterBottom={true}
             required
           />
           <TextField
