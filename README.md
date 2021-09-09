@@ -1,3 +1,57 @@
+# MyPosts
+
+MyPosts a front-end web app basic on [jsonplaceholder api](https://jsonplaceholder.typicode.com/).
+This app was built using [react js](https://reactjs.org/) and [material UI](https://material-ui.com/).
+
+The app provides the fetched posts from the api as a grid, each item contains the title and post content. as well as a delete button to remove the post if wanted.
+There's also a create post page to create new post.
+
+The app uses get, post and delete https request to the api.
+
+# Installation
+
+To be able to use this app project, you have to make sure you have `nodeJs` installed on your computer,
+to make sure if it is run the command `node --version` in the terminal you use.
+it is required so you can use npm to install the depandencies of this project via this command `npm install`
+
+to compile your code run the following command:
+`npm start`
+
+# links
+
+[My portfolio](https://aboulhassan.netlify.app/).
+[My github](https://github.com/LahoucineABOULHASSAN).
+[Image address](https://images.unsplash.com/photo-1461151304267-38535e780c79?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1190&q=80).
+
+[Node js](https://nodejs.org/en/download/).
+[React js](https://reactjs.org/).
+[Material UI](https://material-ui.com/).
+[Jsonplaceholder api](https://jsonplaceholder.typicode.com/).
+
+# License
+
+MIT License
+
+Copyright (c) [2021] [lahoucine aboulhassan](https://aboulhassan.netlify.app/).
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
