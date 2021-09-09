@@ -10,7 +10,7 @@ export const useStyles = makeStyles((theme) => {
       padding: "4rem 2rem",
     },
     field: {
-      margin: "1.5rem 0",
+      margin: "0.5rem 0",
       display: "block",
     },
     drawer: {
@@ -26,6 +26,11 @@ export const useStyles = makeStyles((theme) => {
     // toolbar classes
     appBar: {
       width: `calc(100% - ${drawerWidth}px)`,
+      "& h5": {
+        textAlign: "right",
+        display: "block",
+        width: "100%",
+      },
     },
     toolBar: theme.mixins.toolbar,
     buttons: {

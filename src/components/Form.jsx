@@ -90,8 +90,10 @@ const Form = () => {
             label="Note Title"
             fullWidth={true}
             error={titleError}
+            gutterBottom={true}
             required
           />
+          <br />
           <TextField
             onChange={(event) => setPost(event.target.value)}
             className={classes.field}

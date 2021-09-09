@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <AppBar className={classes.appBar} elevation={0} color="default">
       <Toolbar>
-        <Typography variant="subtitle1">
+        <Typography variant="subtitle1" component="h5">
           {format(new Date(), "do MMMM Y")}
         </Typography>
       </Toolbar>
