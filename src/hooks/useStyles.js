@@ -10,7 +10,7 @@ export const useStyles = makeStyles((theme) => {
       padding: "4rem 2rem",
     },
     field: {
-      margin: "0.5rem 0",
+      margin: "1.5rem 0",
       display: "block",
     },
     drawer: {
