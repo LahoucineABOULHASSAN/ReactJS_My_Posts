@@ -85,7 +85,7 @@ const Form = () => {
         >
           <TextField
             onChange={(event) => setTitle(event.target.value)}
-            className={classes.field}
+            className="input-field"
             variant="outlined"
             label="Note Title"
             fullWidth={true}
@@ -93,10 +93,9 @@ const Form = () => {
             gutterBottom={true}
             required
           />
-          <br />
           <TextField
             onChange={(event) => setPost(event.target.value)}
-            className={classes.field}
+            className="input-field"
             variant="outlined"
             label="Note Post"
             fullWidth={true}
